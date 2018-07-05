@@ -6,7 +6,7 @@ import (
 	"sync"
 	"time"
 
-	"github.com/kshvakov/clickhouse"
+	"github.com/zanmato1984/clickhouse"
 	data "github.com/zanmato1984/clickhouse/lib/data"
 )
 
