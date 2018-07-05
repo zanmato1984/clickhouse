@@ -7,7 +7,7 @@ import (
 	"time"
 
 	"github.com/kshvakov/clickhouse"
-	data "github.com/kshvakov/clickhouse/lib/data"
+	data "github.com/zanmato1984/clickhouse/lib/data"
 )
 
 func main() {

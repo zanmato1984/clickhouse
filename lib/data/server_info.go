@@ -5,8 +5,8 @@ import (
 	//"io"
 	"time"
 
-	"github.com/kshvakov/clickhouse/lib/binary"
-	"github.com/kshvakov/clickhouse/lib/protocol"
+	"github.com/zanmato1984/clickhouse/lib/binary"
+	"github.com/zanmato1984/clickhouse/lib/protocol"
 )
 
 type ServerInfo struct {

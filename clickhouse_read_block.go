@@ -1,7 +1,7 @@
 package clickhouse
 
 import (
-	"github.com/kshvakov/clickhouse/lib/data"
+	"github.com/zanmato1984/clickhouse/lib/data"
 )
 
 func (ch *clickhouse) readBlock() (*data.Block, error) {

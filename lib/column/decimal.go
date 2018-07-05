@@ -6,7 +6,7 @@ import (
 	"strings"
 
 	"github.com/juju/errors"
-	"github.com/kshvakov/clickhouse/lib/binary"
+	"github.com/zanmato1984/clickhouse/lib/binary"
 )
 
 // Decimal is the Clickhouse Decimal column.

@@ -5,7 +5,7 @@ import (
 	"fmt"
 	"reflect"
 
-	"github.com/kshvakov/clickhouse/lib/binary"
+	"github.com/zanmato1984/clickhouse/lib/binary"
 )
 
 type FixedString struct {

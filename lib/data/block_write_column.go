@@ -3,9 +3,9 @@ package data
 import (
 	"time"
 
-	"github.com/kshvakov/clickhouse/lib/binary"
-	"github.com/kshvakov/clickhouse/lib/column"
-	"github.com/kshvakov/clickhouse/lib/types"
+	"github.com/zanmato1984/clickhouse/lib/binary"
+	"github.com/zanmato1984/clickhouse/lib/column"
+	"github.com/zanmato1984/clickhouse/lib/types"
 )
 
 func (block *Block) WriteDate(c int, v time.Time) error {
