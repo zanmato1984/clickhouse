@@ -6,7 +6,8 @@ import (
 	"strconv"
 	"strings"
 
-	"github.com/juju/errors"
+	"errors"
+
 	"github.com/zanmato1984/clickhouse/lib/binary"
 )
 
@@ -26,7 +27,7 @@ func (d *Decimal) Write(encoder *binary.Encoder, v interface{}) error {
 	case []byte:
 		_, err := encoder.Write(value)
 		if err != nil {
-			return errors.Trace(err)
+			return err
 		}
 		return nil
 	default:
@@ -45,11 +46,11 @@ func parseDecimal(name, chType string) (*Decimal, error) {
 	splits := strings.Split(s, ",")
 	precision, err := strconv.Atoi(splits[0])
 	if err != nil {
-		return nil, errors.Trace(err)
+		return nil, err
 	}
 	scale, err := strconv.Atoi(splits[1])
 	if err != nil {
-		return nil, errors.Trace(err)
+		return nil, err
 	}
 	return &Decimal{
 		base: base{
