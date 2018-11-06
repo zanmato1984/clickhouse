@@ -1,12 +1,11 @@
 package column
 
 import (
+	"errors"
 	"fmt"
 	"reflect"
 	"strconv"
 	"strings"
-
-	"errors"
 
 	"github.com/zanmato1984/clickhouse/lib/binary"
 )
